@@ -1,0 +1,18 @@
+RECURSION : 
+Recursion is a programming technique in which a function calls itself to solve a smaller instance of the same problem. Each recursive call works on a progressively simpler input until a base case is reached, at which point the solution builds back up.
+
+USES OF RECURSION :
+Recursion simplifies complex problems by breaking them down into smaller subproblems. It is especially useful in scenarios where a task involves repeated application of a rule or formula, such as computing factorials, traversing trees, or processing year-over-year growth.
+
+TIME COMPLEXITY ANALYSIS :
+Time Complexity: O(n)
+Although efficient for small inputs, the recursive depth increases with the number of years, which may impact performance in large-scale forecasts.
+
+OPTIMIZATION STRATEGY : 
+Avoiding Redundant Computation
+To optimize the recursive solution and reduce redundant calculations, memoization can be used.
+Memoization involves storing the results of previous computations in a data structure (like an array or map). If the same year’s value is needed again, it can be retrieved directly without re-executing the recursion.
+This approach:
+1. Maintains the readability of recursion
+2. Reduces unnecessary recomputation
+3. Improves performance, especially when forecasting multiple years or running repeated simulations
