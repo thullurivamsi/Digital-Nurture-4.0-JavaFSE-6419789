@@ -1,0 +1,22 @@
+BIG O NOTATION :
+Big O Notation describes the performance or complexity of an algorithm in terms of input size n.
+It helps us estimate how an algorithm behaves when the input grows large.
+
+BIG O FOR SEARCH ALGORITHMS :
+             LINEAR SEARCH  BINARY SEARCH
+BEST CASE  :  O(1)           O(1)                : Element is found at first comparision
+AVG CASE   :  O(n)           O(log n)            : Element is found at the middle or found after a few comparisions
+WORST CASE :  O(n)           O(log n)            : Element is not in the list or found at the end of search
+
+COMPARISION OF SEARCH ALGORITHMS :
+LINEAR SEARCH :
+1. Does not require sorting
+2. Slower for large lists
+3. Suitable for small or unsorted datasets
+4. If the product list is small or frequently changing, use Linear Search 
+
+BINARY SEARCH
+1. Requires sorted input
+2. Much faster for large datasets (O(log n))
+3. Not suitable for dynamic or unsorted data unless sorted beforehand
+4. If the product list is large and mostly static, use Binary Search
