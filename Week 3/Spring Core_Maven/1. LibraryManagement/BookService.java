@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class BookService {
 
-    private final BookRepository bookRepository ;
+    private BookRepository bookRepository ;
 
     public BookService(BookRepository bookRepository) {
         this.bookRepository = bookRepository ;
