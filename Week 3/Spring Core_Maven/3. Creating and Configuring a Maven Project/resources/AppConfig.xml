@@ -1,0 +1,15 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop = "http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="homeController" class="com.library.Control.HomeController"/>
+    <bean id="libraryManagementApplication" class="com.library.LibraryManagementApplication"/>
+    <bean id="bookRepository" class="com.library.Repository.BookRepository"/>
+    <bean id="bookService" class="com.library.Service.BookService">
+        <constructor-arg ref="bookRepository"/>
+    </bean>
+
+    <bean class="com.library.Aspects.Logger"/>
+    <aop:aspectj-autoproxy/>
+</beans>
