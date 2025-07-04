@@ -1,0 +1,15 @@
+package com.library.Repository;
+
+import java.util.ArrayList;
+
+public class BookRepository {
+    private ArrayList<String> books = new ArrayList<>() ;
+
+    public void addBook(String bookName) {
+        this.books.add(bookName);
+    }
+
+    public ArrayList<String> getBooks() {
+        return this.books;
+    }
+}
