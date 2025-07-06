@@ -1,0 +1,168 @@
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.0)
+
+2025-07-06 11:29:37.333  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Starting OrmLearnApplication using Java 17.0.12 on VAMSI-DESKTOP with PID 10704 (C:\Users\Vamsi\IdeaProjects\orm-learn\target\classes started by Vamsi in C:\Users\Vamsi\IdeaProjects\orm-learn)
+2025-07-06 11:29:37.333 DEBUG 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-07-06 11:29:37.334  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-07-06 11:29:37.370  INFO 10704 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-06 11:29:37.729  INFO 10704 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-06 11:29:37.787  INFO 10704 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2025-07-06 11:29:38.294  INFO 10704 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-06 11:29:38.334  INFO 10704 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-07-06 11:29:38.473  INFO 10704 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-07-06 11:29:38.611  INFO 10704 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-06 11:29:38.866  INFO 10704 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-06 11:29:38.875  INFO 10704 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2025-07-06 11:29:39.516  INFO 10704 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-07-06 11:29:39.526  INFO 10704 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-06 11:29:40.096  INFO 10704 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-06 11:29:40.121  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Started OrmLearnApplication in 3.085 seconds (JVM running for 5.795)
+2025-07-06 11:29:40.126  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Start
+2025-07-06 11:29:40.270 DEBUG 10704 --- [  restartedMain] org.hibernate.SQL                        : 
+    select
+        country0_.co_code as co_code1_0_,
+        country0_.co_name as co_name2_0_ 
+    from
+        country country0_
+Hibernate: 
+    select
+        country0_.co_code as co_code1_0_,
+        country0_.co_name as co_name2_0_ 
+    from
+        country country0_
+2025-07-06 11:29:40.295 DEBUG 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : countries=[Country [code=IN, name=India], Country [code=US, name=United States of America]]
+2025-07-06 11:29:40.299  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : End
+2025-07-06 11:29:40.299  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Start
+2025-07-06 11:29:40.306 DEBUG 10704 --- [  restartedMain] org.hibernate.SQL                        : 
+    select
+        country0_.co_code as co_code1_0_0_,
+        country0_.co_name as co_name2_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.co_code=?
+Hibernate: 
+    select
+        country0_.co_code as co_code1_0_0_,
+        country0_.co_name as co_name2_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.co_code=?
+2025-07-06 11:29:40.308 TRACE 10704 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [IN]
+2025-07-06 11:29:40.315 DEBUG 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Country: Country [code=IN, name=India]
+2025-07-06 11:29:40.315  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : End
+2025-07-06 11:29:40.315  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Start
+2025-07-06 11:29:40.325 DEBUG 10704 --- [  restartedMain] org.hibernate.SQL                        : 
+    select
+        country0_.co_code as co_code1_0_0_,
+        country0_.co_name as co_name2_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.co_code=?
+Hibernate: 
+    select
+        country0_.co_code as co_code1_0_0_,
+        country0_.co_name as co_name2_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.co_code=?
+2025-07-06 11:29:40.326 TRACE 10704 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [JP]
+2025-07-06 11:29:40.336 DEBUG 10704 --- [  restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        country
+        (co_name, co_code) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        country
+        (co_name, co_code) 
+    values
+        (?, ?)
+2025-07-06 11:29:40.337 TRACE 10704 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Japan]
+2025-07-06 11:29:40.337 TRACE 10704 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [JP]
+2025-07-06 11:29:40.342 DEBUG 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Added Country: Country [code=JP, name=Japan]
+2025-07-06 11:29:40.342  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : End
+2025-07-06 11:29:40.342  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Start
+2025-07-06 11:29:40.343 DEBUG 10704 --- [  restartedMain] org.hibernate.SQL                        : 
+    select
+        country0_.co_code as co_code1_0_0_,
+        country0_.co_name as co_name2_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.co_code=?
+Hibernate: 
+    select
+        country0_.co_code as co_code1_0_0_,
+        country0_.co_name as co_name2_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.co_code=?
+2025-07-06 11:29:40.344 TRACE 10704 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [JP]
+2025-07-06 11:29:40.346 DEBUG 10704 --- [  restartedMain] org.hibernate.SQL                        : 
+    update
+        country 
+    set
+        co_name=? 
+    where
+        co_code=?
+Hibernate: 
+    update
+        country 
+    set
+        co_name=? 
+    where
+        co_code=?
+2025-07-06 11:29:40.347 TRACE 10704 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Updated Japan]
+2025-07-06 11:29:40.347 TRACE 10704 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [JP]
+2025-07-06 11:29:40.354 DEBUG 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Updated Country
+2025-07-06 11:29:40.354  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : End
+2025-07-06 11:29:40.354  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Start
+2025-07-06 11:29:40.356 DEBUG 10704 --- [  restartedMain] org.hibernate.SQL                        : 
+    select
+        country0_.co_code as co_code1_0_0_,
+        country0_.co_name as co_name2_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.co_code=?
+Hibernate: 
+    select
+        country0_.co_code as co_code1_0_0_,
+        country0_.co_name as co_name2_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.co_code=?
+2025-07-06 11:29:40.357 TRACE 10704 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [JP]
+2025-07-06 11:29:40.360 DEBUG 10704 --- [  restartedMain] org.hibernate.SQL                        : 
+    delete 
+    from
+        country 
+    where
+        co_code=?
+Hibernate: 
+    delete 
+    from
+        country 
+    where
+        co_code=?
+2025-07-06 11:29:40.360 TRACE 10704 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [JP]
+2025-07-06 11:29:40.365 DEBUG 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : Deleted Country
+2025-07-06 11:29:40.365  INFO 10704 --- [  restartedMain] c.c.orm_learn.OrmLearnApplication        : End
+2025-07-06 11:29:40.371  INFO 10704 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-06 11:29:40.374  INFO 10704 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-06 11:29:40.381  INFO 10704 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+Process finished with exit code 0
