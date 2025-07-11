@@ -1,0 +1,32 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop = "http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    
+    <bean id="in" class="com.cognizant.Countries.Country">
+        <property name="countryName" value = "India"/>
+    </bean>
+    <bean id="us" class="com.cognizant.Countries.Country">
+        <property name="countryName" value = "United States of America"/>
+    </bean>
+    <bean id="uk" class="com.cognizant.Countries.Country">
+        <property name="countryName" value = "United Kingdom"/>
+    </bean>
+    <bean id="jp" class="com.cognizant.Countries.Country">
+        <property name="countryName" value = "Japan"/>
+    </bean>
+
+    <bean id="countryList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="in"/>
+                <ref bean="us"/>
+                <ref bean="uk"/>
+                <ref bean="jp"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+
+</beans>
