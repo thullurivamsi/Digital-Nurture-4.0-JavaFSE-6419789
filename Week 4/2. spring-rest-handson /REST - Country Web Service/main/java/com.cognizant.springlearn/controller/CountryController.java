@@ -15,10 +15,8 @@ public class CountryController {
 
     @GetMapping
     public Country getCountryIndia() {
-        // Load the application context
         ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
         
-        // Get the India bean
         Country country = (Country) context.getBean("in");
         
         return country;
