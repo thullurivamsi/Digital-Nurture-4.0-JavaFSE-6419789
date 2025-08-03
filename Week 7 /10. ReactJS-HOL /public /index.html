@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Office Space Rental App - ReactJS HOL demonstrating JSX, React.createElement(), and inline CSS"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Additional meta tags for office rental app -->
+    <meta name="keywords" content="office space, rental, workspace, react, jsx" />
+    <meta name="author" content="ReactJS HOL Project" />
+    
+    <title>Office Space Rental App - ReactJS HOL</title>
+    
+    <!-- Inline CSS demonstration in HTML head -->
+    <style>
+      /* Global CSS styles for demonstration */
+      .loading-spinner {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #3498db;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- This div will be the target for ReactDOM.render() -->
+    <div id="root">
+      <!-- Loading message with inline CSS -->
+      <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        color: #666;
+      ">
+        <div>
+          <div class="loading-spinner"></div>
+          <p style="margin-top: 10px;">Loading Office Space Rental App...</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Fallback for browsers without JavaScript -->
+    <div id="fallback" style="display: none;">
+      <h1>Office Space Rental App</h1>
+      <p>This application requires JavaScript to run properly.</p>
+      <p>Please enable JavaScript in your browser settings.</p>
+    </div>
+    
+    <script>
+      // Show fallback if JavaScript is disabled
+      if (!window.React) {
+        document.getElementById('root').style.display = 'none';
+        document.getElementById('fallback').style.display = 'block';
+      }
+    </script>
+  </body>
+</html>
